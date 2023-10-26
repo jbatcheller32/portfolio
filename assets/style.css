@@ -1,21 +1,44 @@
+/*Will add variable here once I get futher along*/
+
+
 * {
 
     box-sizing: border-box;
 }
 
+body {
+    padding: 2px;
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: #d8dddf;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1%;
-    background-color: #586c80;
+    height: 100px;
+    background-color: #182735;
     color: #fff;
+    padding: 10px;
 }
 
-nav {
+header h1 {
+
+    text-align: center;
+    padding-bottom: 50px;
+    border: solid;
+    border-color: #0eaaaf;
+    background: #0eaaaf;
+
+}
+
+nav ul {
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
     min-width: 300px;
-    padding-top: 30px;
+    padding: 40px 5px;
 }
 
 nav a {
@@ -23,49 +46,94 @@ nav a {
     color: #fff;
 }
 
-
 main {
     display: flex;
-    justify-content: right;
-    line-height: 1.3;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    background-color: #d8dddf;
+
 }
 
+section {
+    display: inline-flex;
+    width: 102%;
+}
 
-
-.work-css {
+aside {
     display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    height: 430px;
-    border: 5px solid;
-    padding: 50px;
-    margin: 20px;
-    flex: 0 0 300px;
+    width: 50%;
+    flex: 30%;
+    background-color: #d8dddf;
+    padding: 20px;
+    height: 300px;
+    border-right: 5px solid #0eaaaf;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    display: inline-flex;
+    text-align: center;
+}
+
+.profile-pic {
+
+    width: 50%;
+    border-radius: 50%;
 
 
 }
 
-
-.work-column {
+/*main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    background-color: #d8dddf;
+}*/
+
+
+
+/*aside {
+    flex: 30%;
+    background-color: #d8dddf;
+    padding: 20px;
     flex-wrap: wrap;
-    width: 300px;
-    border: 5px solid;
-    padding: 50px;
-    margin: 20px;
+
+} */
+
+
+
+/*section {
+    flex: 70%;
+    background-color: #d8dddf;
+    padding: 20px;
+} */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-1 {
+    border: 1px solid #0eaaaf;
+    width: 75%;
+    height: 400px;
 
 }
 
+.images {
 
-
-
-
-
-
-
-
-
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -75,11 +143,14 @@ footer {
 
 }
 
+
 footer a {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    list-style-type: none;
     min-width: 300px;
-    color: #e48509;
+    color: #0eaaaf;
+
 }
 
 @media screen and (max-width: 992px) {
