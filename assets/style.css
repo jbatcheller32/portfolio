@@ -27,16 +27,24 @@ header {
     padding: 10px;
 }
 
-header nav {
+/*header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
+}*/
 
 header nav ul {
+    padding-top: 15px;
+    margin-right: 20px;
+    /*float: right;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul li {
@@ -47,6 +55,10 @@ header nav ul li {
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+a:hover {
+    color: #0eaaaf;
 }
 
 p {
@@ -84,8 +96,11 @@ header h1 {
 }
 
 .container1 {
-
-    height: 140px;
+    max-width: 525px;
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 980px;
+    border-right: 5px solid #0eaaaf;
 }
 
 
@@ -112,6 +127,8 @@ header h1 {
 
     width: 100%;
     height: auto;
+    margin-right: 10px;
+    margin-left: 175px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -167,27 +184,11 @@ p {
 
 
 
-/*.projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}*/
-
-/*#img-1 {
-    display: flex;
-    justify-content: center;
-    border: 5px solid #0eaaaf;
-    width: 100%;
-    height: 325px;
-    border-radius: 10%;
-    
-
-}*/
 
 #img-1:hover,
 .images:hover {
 
-    background-color: #4c5f79;
+    background-color: #182735;
 
 
 
@@ -198,10 +199,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 300px;
+    width: 460px;
     height: 200px;
     border: 5px solid #0eaaaf;
     border-radius: 10%;
+    padding: 5px;
 }
 
 
@@ -216,7 +218,7 @@ footer {
 
 #aside-3 {
     display: flex;
-    width: 579px;
+    width: 575px;
     background-color: #d8dddf;
     padding: 20px;
     height: 300px;
@@ -231,18 +233,49 @@ footer a {
     min-width: 300px;
     color: #0eaaaf;
     font-size: 26px;
-    padding-top: 10px;
+    padding-top: 75px;
+    padding-left: 175px;
 
+}
+
+footer a:hover {
+    color: #182735;
 }
 
 @media screen and (max-width: 768px) {
 
-    header,
+    
     body,
-    #aside-1,
-    #aside-2,
-    .images {
+    header nav ul,
+    main,
+    footer, 
+    #work
+     {
         flex-direction: column;
     }
 
+    header {
+        height: auto;
+    }
 }
+
+
+
+@media screen and (max-width: 786px) {
+    #img-1,
+    .images {
+        max-width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    #img-1,
+    .images {
+        max-width: 30%;
+    }
+
+
+}
+    
