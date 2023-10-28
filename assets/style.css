@@ -7,12 +7,24 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
     padding: 2px;
     font-family: sans-serif;
     font-weight: 300;
     line-height: 1.5;
     background-color: #d8dddf;
 }
+/*body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }*/
 
 header {
     display: flex;
@@ -46,21 +58,15 @@ nav a {
     color: #fff;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px;
-    background-color: #d8dddf;
+#about-me, #work {
 
-}
-
-section {
     display: inline-flex;
     width: 102%;
+
 }
 
-aside {
+
+#aside-1 {
     display: flex;
     width: 50%;
     flex: 30%;
@@ -70,9 +76,34 @@ aside {
     border-right: 5px solid #0eaaaf;
 }
 
+#aside-2 {
+
+    display: flex;
+    width: 563px;
+    background-color: #d8dddf;
+    padding: 20px;
+    height: 466px;
+    border-right: 5px solid #0eaaaf;
+}
+
+/*main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 25px;
+    background-color: #d8dddf;
+
+}*/
+
+
+
 h2 {
     text-align: center;
     font-size: 40px;
+}
+
+h3{
+    text-align: center;
 }
 
 p {
@@ -88,31 +119,7 @@ p {
 
 }
 
-/*main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px;
-    background-color: #d8dddf;
-}*/
 
-
-
-/*aside {
-    flex: 30%;
-    background-color: #d8dddf;
-    padding: 20px;
-    flex-wrap: wrap;
-
-} */
-
-
-
-/*section {
-    flex: 70%;
-    background-color: #d8dddf;
-    padding: 20px;
-} */
 
 .projects {
     display: flex;
@@ -127,12 +134,14 @@ p {
 
 }
 
-.images {
 
+.images {
+    flex: 0 0 400px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    width: 200px;
+    height: 150px;
 }
 
 
@@ -153,11 +162,14 @@ footer a {
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
 
     header,
-    main {
-        flex-wrap: wrap;
+    body,
+    #aside-1,
+    #aside-2,
+    .images {
+        flex-direction: column;
     }
 
 }
