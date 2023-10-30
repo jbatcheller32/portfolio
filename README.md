@@ -25,11 +25,22 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 # Page links
 
-Here is the link to the live application: 
+Here is the link to the live application: https://jbatcheller32.github.io/portfolio/
 
-Here is the link to my Github: 
+Here is the link to my Github: https://github.com/jbatcheller32/portfolio
 
 
 
-# Screen shots of appplication
+# Screen shots of the application
+
+<img width="948" alt="portfolio-1" src="https://github.com/jbatcheller32/portfolio/assets/110508090/cf50f200-5ff6-4b51-bdd9-a79da26a6348">
+
+<img width="948" alt="portfolio-2" src="https://github.com/jbatcheller32/portfolio/assets/110508090/f0b874c8-04c8-4e89-add7-b0787a7c4815">
+
+<img width="949" alt="portfolio-3" src="https://github.com/jbatcheller32/portfolio/assets/110508090/f2cde98d-aa83-4c7c-b339-ceb5d9dd92f3">
+
+
+
+
+
 
